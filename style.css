@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, monospace;
+    color: ghostwhite;
+}
+
+.terminal {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.line {
+    white-space: pre-wrap;
+}
+
+.section {
+    margin-top: 16px;
+}
+
+.log-split img {
+    width: 180px;
+    max-width: 180px;
+    height: auto;
+    margin-right: auto; /* ← THIS moves it right on X axis */
+
+    border: 1px solid #ff2a2a;
+    opacity: 0.85;
+    filter: grayscale(100%) contrast(110%);
+}
+
+
+.section-title {
+    color: #ff6666;
+    margin-bottom: 4px;
+}
+
+.error .line {
+    color: #ff0000;
+}
+
+.cmd-link {
+    color: #ff2a2a;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+    .cmd-link:hover {
+        text-decoration: underline;
+    }
+
+.cursor {
+    margin-top: 10px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
